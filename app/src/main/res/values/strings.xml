@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Подписка</string>
+    <string name="setemail">введите e-mail</string>
+    <string name="setname">имя</string>
+</resources>
