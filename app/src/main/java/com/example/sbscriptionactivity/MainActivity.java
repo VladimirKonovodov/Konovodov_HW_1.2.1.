@@ -28,20 +28,20 @@ public class MainActivity extends AppCompatActivity {
         buttonOk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                textView.setText("Подписка на рассылку успешно оформлена для пользователя <" + nameText.getText() + "> на электронный адрес <" + emailText.getText() + ">.");
+                textView.setText(getString(R.string.subStrFirst) + nameText.getText() + getString(R.string.subStrSecond) + emailText.getText() + getString(R.string.subStrThird));
+
             }
 
         });
         buttonClear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                nameText.setText("Имя");
-                emailText.setText("введите e-mail");
-                textView.setText("");
+                nameText.setText(getString(R.string.name));
+                emailText.setText(getString(R.string.enterEmail));
+                textView.setText(null);
 
             }
         });
-
 
     }
 }

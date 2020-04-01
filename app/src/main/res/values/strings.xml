@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">Подписка</string>
-    <string name="setemail">введите e-mail</string>
-    <string name="setname">имя</string>
+    <string name="userName">Имя пользователя</string>
+    <string name="name">Имя</string>
+    <string name="enterEmail">Электронная почта</string>
+    <string name="okButton">Ок</string>
+    <string name="clearButton">Очистить</string>
+    <string name="subStrFirst">Подписка на рассылку успешно оформлена для пользователя \u003c</string>
+    <string name="subStrSecond"> \u003e на электронный адрес \u03c</string>
+    <string name="subStrThird"> \u003e</string>
 </resources>

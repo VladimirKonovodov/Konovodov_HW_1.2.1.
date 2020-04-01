@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -12,25 +13,25 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Имя пользователя"
+        android:text="@string/userName"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/nameText"
-        android:layout_width="match_parent"
 
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-
-
+        android:layout_marginEnd="16dp"
         android:background="@color/colorItems"
         android:ems="10"
         android:inputType="textPersonName"
         android:selectAllOnFocus="true"
         android:singleLine="true"
         android:text="Имя"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -39,43 +40,61 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-
         android:layout_marginTop="16dp"
-        android:text="Электронная почта"
+        android:text="@string/enterEmail"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nameText" />
 
     <EditText
+
+
         android:id="@+id/emailText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:background="@color/colorItems"
-
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textWebEmailAddress|textEmailSubject"
         android:selectAllOnFocus="true"
-        android:singleLine="true"
-        android:text="введите e-mail"
+        android:text="@string/enterEmail"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
+
     <Button
+
         android:id="@+id/buttonOk"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="Ок"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorButtons"
+
+        android:bottomRightRadius="100dp"
+        android:bottomLeftRadius="100px"
+        android:topLeftRadius="100px"
+        android:topRightRadius="100px"
+
+
+        android:duplicateParentState="false"
+        android:text="@string/okButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailText" />
 
+
     <Button
         android:id="@+id/buttonClear"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Очистить"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorButtons"
+        android:text="@string/clearButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonOk" />
